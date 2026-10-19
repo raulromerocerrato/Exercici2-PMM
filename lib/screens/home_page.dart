@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import '../providers/menu_providers.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -13,13 +13,34 @@ class HomePage extends StatelessWidget {
   }
 
   Widget _lista() {
-    return ListView(
-      children: _listaElements(),
+    return FutureBuilder(
+      future: menuProvider.carregarDades(),
+      initialData: [],
+      builder: (context, AsyncSnapshot<List<dynamic>> snapshot) {
+        print('builder');
+        print(snapshot.data);
+        return ListView(
+          children: _listaElements(snapshot.data),
+        );
+      },
     );
   }
 
-  List<Widget> _listaElements() {
-    // De momento, lista vacía
-    return [];
+  List<Widget> _listaElements(List<dynamic>? data) {
+    final List<Widget> elements = [];
+
+    data?.forEach((element) {
+      final widgetTemp = ListTile(
+        title: Text(element['texte']),
+        leading: Icon(Icons.account_circle, color: Colors.blue),
+        trailing: Icon(Icons.keyboard_arrow_right, color: Colors.blue),
+        onTap: () {},
+      );
+      elements
+        ..add(widgetTemp)
+        ..add(Divider());
+    });
+
+    return elements;
   }
 }
