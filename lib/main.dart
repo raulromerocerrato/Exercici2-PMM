@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '/screens/home_temp.dart';
+import 'screens/home_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -9,12 +9,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Components',
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Components'),
-        ),
-        body: HomePageTemp(),
-      ),
+      home: HomePage(),
     );
   }
 }
