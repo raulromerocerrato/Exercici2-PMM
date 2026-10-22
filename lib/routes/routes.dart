@@ -4,6 +4,7 @@ import '../screens/avatar_page.dart';
 import '../screens/home_page.dart';
 import '../screens/card_page.dart';
 import '../screens/animated_container.dart';
+import '../screens/input_page.dart';
 
 
 Map<String, WidgetBuilder> getRoutes() {
@@ -12,6 +13,7 @@ Map<String, WidgetBuilder> getRoutes() {
     'alert': (BuildContext context) => AlertPage(),
     'avatar': (BuildContext context) => AvatarPage(),
     'card': (BuildContext context) => CardPage(),
-    'animatedContainer':(context) => AnimatedContainerPage(),
+    'animatedContainer': (BuildContext context) => AnimatedContainerPage(),
+    'inputs': (BuildContext context) => InputPage(),
   };
 }
