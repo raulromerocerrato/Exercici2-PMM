@@ -6,6 +6,8 @@ class AvatarPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Pàgina Avatar'),
+        backgroundColor: Colors.blue,
+        foregroundColor: Colors.white,
         actions: [
           Container(
             margin: EdgeInsets.only(right: 10.0),

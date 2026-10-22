@@ -19,6 +19,8 @@ class _AnimatedContainerPageState extends State<AnimatedContainerPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Contenidor Animat'),
+        backgroundColor: Colors.blue,
+        foregroundColor: Colors.white,
       ),
       body: Center(
         child: AnimatedContainer(
