@@ -1,3 +1,4 @@
+import 'package:exercici2_pmm/screens/slider_page.dart';
 import 'package:flutter/material.dart';
 import '../screens/alert_page.dart';
 import '../screens/avatar_page.dart';
@@ -15,5 +16,6 @@ Map<String, WidgetBuilder> getRoutes() {
     'card': (BuildContext context) => CardPage(),
     'animatedContainer': (BuildContext context) => AnimatedContainerPage(),
     'inputs': (BuildContext context) => InputPage(),
+    'slider': (BuildContext context) => SliderPage(),
   };
 }
