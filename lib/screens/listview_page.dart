@@ -38,6 +38,8 @@ class _LlistaPageState extends State<LlistaPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Llistes'),
+        backgroundColor: Colors.blue,
+        foregroundColor: Colors.white,
       ),
       body: Stack(
         children: [
