@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 
 class SliderPage extends StatefulWidget {
@@ -70,7 +68,7 @@ class _SliderPageState extends State<SliderPage> {
       value: _valorCheckBox, 
       onChanged: (estat) {
         setState(() {
-          _valorCheckBox = estat!;
+          _valorCheckBox = estat;
         });
       }
     );

@@ -1,3 +1,4 @@
+import 'package:exercici2_pmm/screens/listview_page.dart';
 import 'package:exercici2_pmm/screens/slider_page.dart';
 import 'package:flutter/material.dart';
 import '../screens/alert_page.dart';
@@ -17,5 +18,6 @@ Map<String, WidgetBuilder> getRoutes() {
     'animatedContainer': (BuildContext context) => AnimatedContainerPage(),
     'inputs': (BuildContext context) => InputPage(),
     'slider': (BuildContext context) => SliderPage(),
+    'list': (BuildContext context) => LlistaPage(),
   };
 }
